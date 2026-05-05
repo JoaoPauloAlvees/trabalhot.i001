@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Desenvolvimento Web</title>
   <style>
+    html{ scroll-behavior: smooth;
+    }
     body { 
         margin: 0;
         min-height: 100vh;
@@ -20,6 +22,8 @@
         padding: 15px;
         background-color: rgb(44, 44, 44);
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        position: static;
+        z-index: 1000;
     }
 
     .menu-superior a { 
@@ -32,7 +36,10 @@
     .menu-superior a:hover {
         color: #d4772b; 
     }
-
+section{
+    padding: 60px 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
     .bloco-conteudo {
         display: flex;
         flex-direction: row;
@@ -59,14 +66,15 @@
 <body>
 
     <header class="menu-superior">
-        <span><a href="index.html">Tema do trabalho</a></span>
-        <span><a href="profissao.html">Sobre a Profissão</a></span>
-        <span><a href="dicas.html">Dicas e Tendêndias</a></span>
-        <span><a href="ods.html">ODS 9</a></span>
-        <Span><a href="contatos.html">Contatos</a></Span>
+        <span><a href="#inicio">Tema do trabalho</a></span>
+        <span><a href="#profissao">Sobre a Profissão</a></span>
+        <span><a href="#dicas">Dicas e Tendêndias</a></span>
+        <span><a href="#ods">ODS 9</a></span>
+        <Span><a href="#contatos">Contatos</a></Span>
     </header>
 
-    <div class="bloco-conteudo">
+  <section id="inico">
+  <div class="bloco-conteudo">
         <img src="oi.png" alt="logo da Faculdade" class="logo-menu"> 
         <div class="texto-lado">
             <h1>Desenvolvedor Web</h1>
@@ -74,79 +82,32 @@
             <p>Neste trabalho, você entenderá não apenas o "como" (as linguagens e ferramentas como HTML, CSS e JavaScript), mas também o "porquê" dessa profissão ser um pilar para o futuro. Veremos as exigências de um mercado que valoriza a inovação constante e como o desenvolvimento de software se conecta diretamente com metas globais, como o ODS 9 da ONU, promovendo uma infraestrutura tecnológica mais acessível, eficiente e sustentável para todos.</p>
         </div>
     </div>
-
-    <div style="padding: 0 30px;">
+</section>
+<section id="profissao">
         <h2>O que faz um profissional dessa área?</h2>
-        <p>O desenvolvedor web é o "construtor" da internet. Ele cria, mantém e atualiza sites e aplicativos que usamos no navegador (como o Google, Facebook ou uma loja virtual). O trabalho é dividido em três frentes principais:</p>
-<p> Front-end: Cuida da parte que o usuário vê e interage (botões, cores, menus).
+        <p>O desenvolvedor web é o "construtor" da internet...</p>
+    </section>
 
-<br>Back-end: Cuida dos "bastidores", como o banco de dados e a segurança das informações.
-
-<br>Full-stack: É o profissional completo, que entende tanto da parte visual quanto dos bastidores.</p>
-
-
+    <section id="dicas">
         <h2>Principais tecnologias, linguagens e ferramentas</h2>
-        <p>Para trabalhar na área, o profissional utiliza um "kit" de ferramentas moderno:
-
-Linguagens Base: HTML (estrutura), CSS (visual) e JavaScript (movimento/lógica).
-
-Frameworks (Atalhos de produtividade): React e Vue.js para o visual; Node.js e Python (Django) para o servidor.
-
-<br> Inteligência Artificial: Em 2026, ferramentas como GitHub Copilot são usadas diariamente para ajudar a escrever códigos mais rápido e com menos erros.
-
-<br>Controle de Versão: O Git (e plataformas como GitHub) é essencial para salvar o progresso do trabalho e trabalhar em equipe.</p>
-
+        <p>Para trabalhar na área, o profissional utiliza um "kit" de ferramentas moderno...</p>
+        
         <h2>Certificações e qualificações valorizadas</h2>
-       <p> Além do diploma da faculdade, o mercado valoriza muito:
+        <p>Além do diploma da faculdade, o mercado valoriza muito...</p>
+    </section>
 
-Portfólio no GitHub: Projetos reais que mostram o que você sabe fazer na prática.
-
-<br>Certificações de Nuvem: AWS (Amazon), Google Cloud ou Microsoft Azure são muito disputadas.
-
-<br>Certificações Específicas: Provas da Oracle para Java ou certificações de frameworks como React.
-
-<br>Soft Skills: Saber trabalhar em grupo, ter boa comunicação e resolver problemas sob pressão.</p>
-
-        <h2>Média salarial e perspectivas</h2>
-        <p>A área continua sendo uma das que mais cresce, pois toda empresa hoje precisa estar na internet.
-
-<br>Júnior (Iniciante): R$ 3.000 a R$ 5.000.
-
-<br>Pleno (Intermediário): R$ 5.500 a R$ 9.000.
-
-<br>Sênior (Experiente): Pode ultrapassar os R$ 15.000, especialmente em empresas estrangeiras ou grandes bancos.
-<br>Perspectiva: A demanda por sites mais seguros e rápidos, além da integração com IA, garante que não faltará emprego nos próximos anos.</p>
-
-        <h2>Principais empresas que contratam</h2>
-       <p> Basicamente, qualquer empresa que tenha um serviço digital contrata desenvolvedores web:
-
-<br>Big Techs: Google, Meta (Facebook), Amazon.
-
-<br>Empresas Brasileiras: Totvs, Nubank, Magazine Luiza e Mercado Livre.
-
-<br>Agências de Marketing: Que criam sites para diversos clientes menores.
-
-<br>Trabalho Remoto: Muitos brasileiros trabalham de casa para empresas dos EUA ou Europa, ganhando em dólar ou euro. </p>
-
-        <h2>Desafios e oportunidades</h2>
-        Desafios: A tecnologia muda muito rápido. O que você aprende hoje pode ficar ultrapassado em dois anos. Além disso, a segurança contra ataques de hackers é um desafio constante.
-
-<br>Oportunidades: Flexibilidade de trabalhar de qualquer lugar (Home Office), altos salários e a chance de criar algo que milhares de pessoas vão usar.
-
+    <section id="ods">
         <h2>Desenvolvimento Web e o ODS 9 (Indústria, Inovação e Infraestrutura)</h2>
-        <p>O ODS 9 da ONU busca construir infraestruturas resilientes e fomentar a inovação. O desenvolvedor web contribui diretamente para isso:
+        <p>O ODS 9 da ONU busca construir infraestruturas resilientes...</p>
+    </section>
 
-<br>Inclusão Digital: Ao criar sites leves e acessíveis, o desenvolvedor permite que pessoas com internet lenta ou dispositivos antigos tenham acesso a serviços essenciais (Educação e Saúde).
+    <section id="contatos">
+        <h2>Contatos</h2>
+        <p>Email: seuemail@exemplo.com</p>
+    </section>
+   
 
-<br>Exemplo Real 1 (Telemedicina): Plataformas web permitem que médicos atendam pacientes em áreas isoladas, fortalecendo a infraestrutura de saúde sem precisar de prédios físicos em todo lugar.
-
-<br>Exemplo Real 2 (Sistemas de Logística): Desenvolvedores criam painéis de controle para indústrias que otimizam o transporte de cargas, reduzindo o desperdício de combustível e tornando a indústria mais sustentável e eficiente.
-
-<br>Digitalização de Pequenos Negócios: Criar sistemas de venda online para pequenos produtores locais ajuda a modernizar a economia e gerar inovação fora dos grandes centros.</p>
-
-    </div>
+  
 
 </body>
 </html>
-
-
